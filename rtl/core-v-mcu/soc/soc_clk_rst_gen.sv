@@ -132,7 +132,7 @@ module soc_clk_rst_gen (
   assign s_clk_fll_cluster = ref_clk_i;
 `else
   gf22_FLL i_fll_soc (
-      xxx.FLLCLK (s_clk_fll_soc),
+      .FLLCLK (s_clk_fll_soc),
       .FLLOE (1'b1),
       .REFCLK(ref_clk_i),
       .LOCK  (soc_fll_slave_lock_o),
